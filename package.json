@@ -1,33 +1,16 @@
 {
-  "name": "tachyons",
+  "name": "tachyons-with-css-variabls",
   "version": "4.11.2",
-  "description": "Functional CSS for humans",
+  "description": "Functional CSS for humans who like CSS variables",
   "author": "mrmrs",
-  "style": "css/tachyons.min.css",
-  "main": "css/tachyons.css",
+  "style": "css/tachyons-with-css-variables.min.css",
+  "main": "css/tachyons-with-css-variables.css",
   "files": [
     "css",
     "src"
   ],
-  "repository": "tachyons-css/tachyons",
-  "keywords": [
-    "css",
-    "oocss",
-    "postcss",
-    "functional css",
-    "design",
-    "responsive",
-    "performance"
-  ],
+  "repository": "hkgumbs/tachyons-with-css-variables",
   "license": "MIT",
-  "devDependencies": {
-    "copy-files": "^0.1.0",
-    "immutable-css-cli": "^1.1.1",
-    "normalize.css": "^8.0.0",
-    "tachyons-modules": "^1.1.10",
-    "tachyons-cli": "^1.3.2",
-    "watch": "^1.0.2"
-  },
   "contributors": [
     {
       "name": "adam morse",
@@ -36,14 +19,10 @@
     {
       "name": "john otander",
       "url": "http://johnotander.com"
+    },
+    {
+      "name": "kofi gumbs",
+      "url": "https://kofi.sexy"
     }
-  ],
-  "scripts": {
-    "start": "npm run build:watch",
-    "mutations": "immutable-css src/tachyons.css --strict",
-    "build": "npm run build:css && npm run build:minify",
-    "build:css": "tachyons src/tachyons.css > css/tachyons.css",
-    "build:minify": "tachyons src/tachyons.css --minify > css/tachyons.min.css",
-    "build:watch": "watch \"npm run build\" ./src/"
-  }
+  ]
 }
