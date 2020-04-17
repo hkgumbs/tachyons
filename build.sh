@@ -91,8 +91,8 @@ cat src/_styles.css              >> css/tachyons-with-css-variables.css
 cat src/_colors.css              >> css/tachyons-with-css-variables.css
 
 # Media Queries
-perl -pi -e "s/--breakpoint-not-small/${BREAKPOINT_NOT_SMALL}/g" css/tachyons-with-css-variables.css
-perl -pi -e "s/--breakpoint-medium/${BREAKPOINT_MEDIUM}/g"       css/tachyons-with-css-variables.css
-perl -pi -e "s/--breakpoint-large/${BREAKPOINT_LARGE}/g"         css/tachyons-with-css-variables.css
+perl -pi -e "s/\\(--breakpoint-not-small\\)/${BREAKPOINT_NOT_SMALL}/g" css/tachyons-with-css-variables.css
+perl -pi -e "s/\\(--breakpoint-medium\\)/${BREAKPOINT_MEDIUM}/g"       css/tachyons-with-css-variables.css
+perl -pi -e "s/\\(--breakpoint-large\\)/${BREAKPOINT_LARGE}/g"         css/tachyons-with-css-variables.css
 
 npx minify css/tachyons-with-css-variables.css > css/tachyons-with-css-variables.min.css
