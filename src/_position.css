@@ -10,12 +10,14 @@
 
 */
 
+.sticky { position: sticky; }
 .static { position: static; }
 .relative  { position: relative; }
 .absolute  { position: absolute; }
 .fixed  { position: fixed; }
 
 @media (--breakpoint-not-small) {
+  .sticky-ns { position: sticky; }
   .static-ns { position: static; }
   .relative-ns  { position: relative; }
   .absolute-ns  { position: absolute; }
@@ -23,6 +25,7 @@
 }
 
 @media (--breakpoint-medium) {
+  .sticky-m { position: sticky; }
   .static-m { position: static; }
   .relative-m  { position: relative; }
   .absolute-m  { position: absolute; }
@@ -30,6 +33,7 @@
 }
 
 @media (--breakpoint-large) {
+  .sticky-l { position: sticky; }
   .static-l { position: static; }
   .relative-l  { position: relative; }
   .absolute-l  { position: absolute; }

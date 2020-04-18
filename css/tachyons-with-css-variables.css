@@ -2538,12 +2538,14 @@ code, .code {
 
 */
 
+.sticky { position: sticky; }
 .static { position: static; }
 .relative  { position: relative; }
 .absolute  { position: absolute; }
 .fixed  { position: fixed; }
 
 @media screen and (min-width: 30em) {
+  .sticky-ns { position: sticky; }
   .static-ns { position: static; }
   .relative-ns  { position: relative; }
   .absolute-ns  { position: absolute; }
@@ -2551,6 +2553,7 @@ code, .code {
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
+  .sticky-m { position: sticky; }
   .static-m { position: static; }
   .relative-m  { position: relative; }
   .absolute-m  { position: absolute; }
@@ -2558,6 +2561,7 @@ code, .code {
 }
 
 @media screen and (min-width: 60em) {
+  .sticky-l { position: sticky; }
   .static-l { position: static; }
   .relative-l  { position: relative; }
   .absolute-l  { position: absolute; }
