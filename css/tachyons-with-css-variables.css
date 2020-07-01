@@ -2542,12 +2542,14 @@ code, .code {
 .relative  { position: relative; }
 .absolute  { position: absolute; }
 .fixed  { position: fixed; }
+.sticky  { position: sticky; }
 
 @media screen and (min-width: 30em) {
   .static-ns { position: static; }
   .relative-ns  { position: relative; }
   .absolute-ns  { position: absolute; }
   .fixed-ns  { position: fixed; }
+  .sticky-ns  { position: sticky; }
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
@@ -2555,6 +2557,7 @@ code, .code {
   .relative-m  { position: relative; }
   .absolute-m  { position: absolute; }
   .fixed-m  { position: fixed; }
+  .sticky-m  { position: sticky; }
 }
 
 @media screen and (min-width: 60em) {
@@ -2562,6 +2565,7 @@ code, .code {
   .relative-l  { position: relative; }
   .absolute-l  { position: absolute; }
   .fixed-l  { position: fixed; }
+  .sticky-l  { position: sticky; }
 }
 /*
 
